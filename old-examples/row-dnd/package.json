@@ -4,18 +4,21 @@
     "start": "rescripts start",
     "build": "rescripts build",
     "test": "rescripts test",
-    "eject": "rescripts eject"
+    "eject": "rescripts eject",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "namor": "^1.1.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.0",
     "react-table": "latest",
     "styled-components": "^4.3.2",
     "react-dnd": "^10.0.2",
     "react-dnd-html5-backend": "^9.4.0",
-    "immutability-helper": "^3.0.1"
+    "immutability-helper": "^3.0.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@rescripts/cli": "^0.0.11",
@@ -34,5 +37,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "snyk": true
 }
